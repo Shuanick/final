@@ -4,7 +4,6 @@ const multer = require('multer');
 const path = require('path');
 const Post = require('../models/post');
 const { Storage } = require('@google-cloud/storage');
-require('dotenv').config();//環境變量
 
 // 初始化 GCS
 const storage = new Storage({
