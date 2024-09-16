@@ -14,7 +14,10 @@ MONGODB_URI = "mongodb+srv://linshuan880727:linshuan0727@nickserver.0wgra.mongod
 
 // 连接到 MongoDB
 // mongoose.connect('mongodb+srv://linshuan880727:linshuan0727@nickserver.0wgra.mongodb.net/?retryWrites=true&w=majority&appName=NickServer');
-mongoose.connect(MONGODB_URI);
+mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 
 // 检查连接
 mongoose.connection.on('connected', () => {
