@@ -5,6 +5,8 @@ const postRoutes = require('./routes/posts');
 const uploadRoutes = require('./routes/upload');
 const cors = require('cors');
 const path = require('path');
+require('dotenv').config();
+
 
 const app = express();
 const port = process.env.PORT;
