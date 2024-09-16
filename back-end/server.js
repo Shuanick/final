@@ -10,14 +10,11 @@ require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT;
-MONGODB_URI = "mongodb+srv://linshuan880727:linshuan0727@nickserver.0wgra.mongodb.net/?retryWrites=true&w=majority&appName=NickServer";
+MONGODB_URI = "mongodb+srv://linshuan880727:linshuan0727@nickserver.0wgra.mongodb.net/?retryWrites=true&w=majority&appName=NickServer&ssl=true";
 
 // 连接到 MongoDB
 // mongoose.connect('mongodb+srv://linshuan880727:linshuan0727@nickserver.0wgra.mongodb.net/?retryWrites=true&w=majority&appName=NickServer');
-mongoose.connect(MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+mongoose.connect(MONGODB_URI);
 
 // 检查连接
 mongoose.connection.on('connected', () => {
