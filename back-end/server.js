@@ -8,6 +8,7 @@ const path = require('path');
 
 const app = express();
 const port = process.env.PORT;
+MONGODB_URI = process.env.MONGODB_URI;
 
 // 连接到 MongoDB
 // mongoose.connect('mongodb+srv://linshuan880727:linshuan0727@nickserver.0wgra.mongodb.net/?retryWrites=true&w=majority&appName=NickServer');
