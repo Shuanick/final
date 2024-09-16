@@ -4,6 +4,7 @@ const multer = require('multer');
 const path = require('path');
 const { Storage } = require('@google-cloud/storage');
 const fetch = require('node-fetch');
+require('dotenv').config();
 
 // 初始化雲端
 
