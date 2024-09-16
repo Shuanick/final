@@ -1,0 +1,19 @@
+{
+  "name": "nickproduct",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd back-end && node server.js",
+    "client": "cd front-end && npm start",
+    "heroku-postbuild": "cd front-end && npm install && npm run build"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "cors": "^2.8.5"
+  }
+}
